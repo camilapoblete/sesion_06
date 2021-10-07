@@ -26,7 +26,7 @@ h3{
 }
 
 h3.movido{
-	animation: shake-it-off .2s infinite;
+	animation: shake-it-off .1.5s infinite;
 }
 
 a{color: #002171;}
