@@ -21,12 +21,12 @@ h3{
 }
 
 @keyframes shake-it-off {
-  0% { transform:scale(0.98) }
-  100% { transform:scale(1.02) }
+  0% { transform:scale(0.95) }
+  100% { transform:scale(1.05) }
 }
 
 h3.movido{
-	animation: shake-it-off .2s infinite;
+	animation: shake-it-off .3s infinite;
 }
 
 a{color: #002171;}
