@@ -22,7 +22,7 @@ h3{
 
 @keyframes shake-it-off {
   0% { transform:scale(0.95) }
-  100% { transform:scale(1.00) }
+  100% { transform:scale(1.05) }
 }
 
 h3.movido{
