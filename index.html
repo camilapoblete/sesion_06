@@ -12,15 +12,15 @@
             <form id="opciones">
                 <input type="radio" name="paises" value="todos" checked />
                 <label for="todos">All &nbsp;</label>
-                <input type="radio" name="paises" value="chile" />
-                <label for="chile">Chile</label>
+                <input type="radio" name="paises" value="Indonesia" />
+                <label for="Indonesia">Indonesia</label>
             </form>
         </aside>
         <header class="container">
             <div class="row pt-5 pb-3">
                 <div class="col-5 col-sm-3 align-self-center">
                     <!--Busquen otro en https://visualpharm.com/ o https://openmoji.org/library/-->
-                    <object type="image/svg+xml" data="grito.svg" class="w-100">
+                    <object type="image/svg+xml" data="terremoto.svg" class="w-100">
                     </object>                   
                 </div>
                 <div class="col-7 col-sm-9 align-self-center">
@@ -35,7 +35,7 @@
         <footer class="container">
             <div class="row">
                 <div class="col pt-4">
-                    <p class="d-flex justify-content-between align-items-center small"><a href="#">Nombre Apellido</a> <a href="#">AUD5V0010</a></p>
+                    <p class="d-flex justify-content-between align-items-center small"><a href="https://github.com/camilapoblete?tab=repositories">Camila Poblete</a> <a href="https://www.u-cursos.cl/usuario/229de3541ac5b8a567c9e85cb006294f/datos_usuario/">AUD5V0010</a></p>
                 </div>
             </div>
         </footer>
@@ -46,7 +46,7 @@
                     console.log(data);
                     data.features.forEach(function (temblor, i) {
                         var donde;
-                        if (temblor.properties.place.includes("Chile")) {
+                        if (temblor.properties.place.includes("Indonesia")) {
                             donde = 'data-pais="aqui"';
                         } else {
                             donde = 'data-pais="alla"';
@@ -72,7 +72,7 @@
                     var valor;
                     $("#opciones").change(function () {
                         valor = $("input[name='paises']:checked").val();
-                        if (valor == "chile") {
+                        if (valor == "Indonesia") {
                             $("[data-pais='alla']").fadeTo("slow", 0.2);
                         } else {
                             $("[data-pais='aqui']").fadeTo("slow", 1);
